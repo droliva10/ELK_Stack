@@ -76,8 +76,8 @@ The playbook implements the following tasks:
 
 The following screenshots displays the result of running `docker ps` and `systemctl` after successfully configuring the ELK instance.
 
-[Output](Images/docker_ps_output_Project_1.png)
-[Status](Images/systemctl_status_Project_1.png)
+[docker ps](Images/docker_ps_output_Project_1.png)
+[systemctl](Images/systemctl_status_Project_1.png)
 
 ### Target Machines & Beats
 
