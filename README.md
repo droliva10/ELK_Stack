@@ -64,7 +64,7 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible is used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it lessens chances of human error.
-**The main advantage of an automated configuration is that is extremely fast.**
+**The main advantage of an automated configuration is that it is extremely fast.**
 
 The playbook implements the following tasks:
 - Use apt module "essentially is apt get command in Linux operating systems" to Install docker.io container service and update_cache:
