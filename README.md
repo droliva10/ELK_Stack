@@ -64,7 +64,7 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible is used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it lessens chances of human error.
-**The main advantage of an automated configuration is that it is extremely fast.**
+**The main advantage of an automated configuration is that is extremely fast.**
 
 The playbook implements the following tasks:
 - Use apt module "essentially is apt get command in Linux operating systems" to Install docker.io container service and update_cache:
@@ -93,7 +93,6 @@ This ELK server is configured to monitor the following machines:
 
 The `ansible.cfg` file must be edited to allow a second remote_user to access jumpbox remotely.
 
-[ansible.cfg](Images/ansible.cfg_Project_1.png)
 
 These Beats allow collection to the following information from each machine:
 
