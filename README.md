@@ -55,7 +55,7 @@ A summary of the access policies in place can be found in the table below.
 
 | Name   | Publicly Accessible | Allowed IP Addresses |
 |--------|---------------------|----------------------|
-| Kirk   | yes                 | Home Personal IP     |
+| Kirk   | yes                 | Personal IP          |
 | Spock  | No                  | 10.0.0.0-254         |
 | McCoy  | No                  | 10.0.0.0-254         |
 | Sulu   | No                  | 10.0.0.0-254         |
@@ -81,14 +81,19 @@ The following screenshots displays the result of running `docker ps` and `system
 
 ### Target Machines & Beats
 
+I installed the following Beats on these machines:
+- Filebeat
+- Metricbeat
+
 This ELK server is configured to monitor the following machines:
+- 10.0.0.4
 - 10.0.0.5
 - 10.0.0.6
 - 10.0.0.7
 
-I installed the following Beats on these machines:
-- Filebeat
-- Metricbeat
+The `ansible.cfg` file must be edited to allow a second remote_user to access jumpbox remotely.
+
+[ansible.cfg](Images/ansible.cfg_Project_1.png)
 
 These Beats allow collection to the following information from each machine:
 
@@ -101,8 +106,8 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the `filebeat and metricbeat configuration` files to  `/etc/ansible/filebeat.config.yml and /etc/ansible/metricbeat.config.yml`.
-- Update the hosts file to include IP address for [webserver] private IP address. 
-- Run the playbook, and navigate to /etc/filebeat/filebeat.yml and /etc/metricbeat/metricbeat.yml on hosts to check the installation worked as expected.
+- Update the hosts file to include the private IP addresses for [webserver] and [jumpbox].
+- Run the playbook, navigate to /etc/filebeat/filebeat.yml and /etc/metricbeat/metricbeat.yml on hosts and jumpbox to check the installation worked as expected.
 - Ansible commands to be familiar with `ansible [Hosts_Name] -m ping` and`ansible-playbook`.
 - The **install-elk.yml**, **install-filebeat.yml**, and **install-metricbeat.yml** are in my ansible playbooks. They are located in the `/etc/ansible` directory.
 - The hosts file needs to be updated if you intent run the playbook on a specific machine. In the hosts file you can indicate the [Hosts_Name] and below you list specific Hosts private IP addresses.
