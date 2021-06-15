@@ -109,6 +109,5 @@ SSH into the control node and follow the steps below:
 - Run the playbook, navigate to /etc/filebeat/filebeat.yml and /etc/metricbeat/metricbeat.yml on hosts and jumpbox to check the installation worked as expected.
 - Ansible commands to be familiar with include `ansible [Hosts_Name] -m ping` and`ansible-playbook`.
 - The **install-elk.yml**, **install-filebeat.yml**, **install-filebeat-jumpbox.yml**, **install-metricbeat.yml**, **install-metricbeat-jumpbox.yml** are in my ansible playbooks. They are located in the `/etc/ansible` directory.
-- The hosts file needs to be updated if you intent run the playbook on a specific machine. In the hosts file you can indicate the [Hosts_Name] and below you list specific Hosts private IP addresses.
-- Navigate to the ELK Server URL `104.43.131.113:5601` to check that it is up and running.
-
+- The hosts file needs to be updated if you intent run the playbook on a specific machine. In the hosts file you can indicate the [Hosts_Name] and below you list the Hosts private IP addresses.
+- Navigate to the ELK Server URL `104.43.131.113:5601` to check that it is running, and monitoring the Virtual Network.
