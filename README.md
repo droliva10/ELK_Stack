@@ -94,7 +94,7 @@ This ELK server is configured to monitor the following machines:
 The `ansible.cfg` file must be edited to allow a second remote_user to access jumpbox remotely.
 
 
-These Beats allow collection to the following information from each machine:
+These Beats allow collection of the following information from each machine:
 
 - `Filebeat` collects log data of Syslogs, Sudo commands, SSH logins, New user and groups. Filebeat is very useful if you wanted to track SSH logins, successful and unsuccessful attempts.
 - `Metricbeat` collects CPU and Memory Usage, Load, and Network Traffic metrics. Metricbeat is very useful if you wanted to monitor general functionality and performance of a specific machine. 
