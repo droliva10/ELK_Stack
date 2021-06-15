@@ -91,7 +91,7 @@ This ELK server is configured to monitor the following machines:
 - 10.0.0.6
 - 10.0.0.7
 
-The `ansible.cfg` file must be edited to allow a second remote_user to access jumpbox remotely.
+The `ansible.cfg` file must be edited to allow remote_user to access jumpbox and web servers.
 
 
 These Beats allow collection of the following information from each machine:
