@@ -1,6 +1,6 @@
 ---
 - name: Installing and Launch Filebeat
-  hosts: webservers
+  hosts: webservers:jumpbox
   become: yes
   tasks:
     # Use command module

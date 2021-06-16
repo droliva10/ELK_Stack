@@ -1,6 +1,6 @@
 ---
 - name: Install metric beat
-  hosts: jumpbox
+  hosts: Jumpbox
   become: true
   tasks:
     # Use command module
