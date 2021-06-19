@@ -55,7 +55,7 @@ A summary of the access policies in place can be found in the table below.
 
 | Name   | Publicly Accessible | Allowed IP Addresses |
 |--------|---------------------|----------------------|
-| Kirk   | yes                 | Personal IP          |
+| Kirk   | Yes                | Personal IP          |
 | Spock  | No                  | 10.0.0.0-254         |
 | McCoy  | No                  | 10.0.0.0-254         |
 | Sulu   | No                  | 10.0.0.0-254         |
